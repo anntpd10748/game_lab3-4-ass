@@ -10,6 +10,7 @@ public class square2 : MonoBehaviour
 {
     public float time2 = 60;
     public Text cdText2;
+    //lab4
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +56,7 @@ public class square2 : MonoBehaviour
     public void Loadsence3()
     {
         int currentSenceIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSenceIndex + 2);
+        SceneManager.LoadScene(currentSenceIndex + 3);
 
     }
     public void Loadsence4()

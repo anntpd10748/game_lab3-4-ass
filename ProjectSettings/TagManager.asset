@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Circle
   - weel
+  - circle3
   layers:
   - Default
   - TransparentFX

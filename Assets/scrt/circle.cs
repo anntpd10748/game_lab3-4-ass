@@ -7,7 +7,7 @@ public class circle : MonoBehaviour
     private int direction = 1;
     private float movespeed = 3;
     // Start is called before the first frame update
-//lab3
+    //lab3
     void Start()
     {
         
