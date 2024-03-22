@@ -12,6 +12,7 @@ public class spin : MonoBehaviour
     }
 
     // Update is called once per frame
+    //lab4
     void Update()
     {
         Quaternion deltaRotation = Quaternion.Euler(0,0,spinspeed * Time.deltaTime);
