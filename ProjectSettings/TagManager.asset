@@ -7,6 +7,10 @@ TagManager:
   - Circle
   - weel
   - circle3
+  - wall4
+  - bullet
+  - finish
+  - Trap
   layers:
   - Default
   - TransparentFX
