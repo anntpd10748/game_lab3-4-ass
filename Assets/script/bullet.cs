@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
+    public PlayerData playerData;
     //lab7
     // Start is called before the first frame update
     void Start()
@@ -22,13 +23,15 @@ public class bullet : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Circle"))
         {
-            score.Instance.IncreaseScore(scoreValue);
+            playerData.playerScore++;
+            PlayerPrefs.SetInt("PlayerScore", playerData.playerScore);
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
         if (collision.gameObject.tag.Equals("weel"))
         {
-            score.Instance.IncreaseScore(scoreValue);
+            playerData.playerScore++;
+            PlayerPrefs.SetInt("PlayerScore", playerData.playerScore);
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }

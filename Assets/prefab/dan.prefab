@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09747b630d9f984dbc841499f37cce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerData: {fileID: 11400000, guid: a940fdd540b16fd4fa2c3562ca7ab740, type: 2}
   scoreValue: 10
 --- !u!50 &2768269533365697344
 Rigidbody2D:

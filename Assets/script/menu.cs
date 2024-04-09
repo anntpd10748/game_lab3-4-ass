@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class menu : MonoBehaviour
 {
@@ -8,9 +9,13 @@ public class menu : MonoBehaviour
     // Start is called before the first frame update
     public GameObject menuCanvas;
     public GameObject menuSkin;
+    public PlayerData playerData;
+    public Text Level;
+    public Text Score;
     void Start()
     {
         HideMenu();
+        LoadPlayerData();
     }
 
     // Update is called once per frame
@@ -40,5 +45,23 @@ public class menu : MonoBehaviour
         menuCanvas.SetActive(false);
         menuSkin.SetActive(false);
         Time.timeScale = 1f; // Khôi phục thời gian khi ẩn menu
+    }   
+     void LoadPlayerData()
+    {
+        if (PlayerPrefs.HasKey("PlayerLevel"))
+        {
+            Debug.Log("load menu");
+            playerData.playerLevel = PlayerPrefs.GetInt("PlayerLevel");
+            playerData.playerScore = PlayerPrefs.GetInt("PlayerScore");
+            Level.text = "level: " + (playerData.playerLevel).ToString();
+            Score.text = "socre: " + (playerData.playerScore).ToString();
+            Debug.Log("PlayerLevel" + playerData.playerLevel);
+            Debug.Log("PlayerScore" + playerData.playerScore);
+        }
+        else
+        {
+            playerData.playerLevel = 0;
+            playerData.playerScore = 0;
+        }
     }
 }
