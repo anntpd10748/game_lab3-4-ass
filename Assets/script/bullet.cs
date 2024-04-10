@@ -23,6 +23,7 @@ public class bullet : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Circle"))
         {
+            //lab8
             playerData.playerScore++;
             PlayerPrefs.SetInt("PlayerScore", playerData.playerScore);
             Destroy(collision.gameObject);
@@ -30,6 +31,7 @@ public class bullet : MonoBehaviour
         }
         if (collision.gameObject.tag.Equals("weel"))
         {
+            //lab8
             playerData.playerScore++;
             PlayerPrefs.SetInt("PlayerScore", playerData.playerScore);
             Destroy(collision.gameObject);

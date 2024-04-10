@@ -47,6 +47,7 @@ public class menu : MonoBehaviour
         menuSkin.SetActive(false);
         Time.timeScale = 1f; // Khôi phục thời gian khi ẩn menu
     }   
+    //lab8
      void LoadPlayerData()
     {
         if (PlayerPrefs.HasKey("PlayerLevel"))
