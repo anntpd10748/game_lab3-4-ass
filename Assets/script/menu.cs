@@ -15,7 +15,7 @@ public class menu : MonoBehaviour
     void Start()
     {
         HideMenu();
-        LoadPlayerData();
+        
     }
 
     // Update is called once per frame
@@ -30,6 +30,7 @@ public class menu : MonoBehaviour
             else
             {
                 ShowMenu();
+                LoadPlayerData();
             }
         }
     }
